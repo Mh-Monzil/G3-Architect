@@ -132,6 +132,80 @@ main{
     margin: 24px 0 32px;
 }
 
+/* exp  */
+
+.exp{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    gap: 145px;
+    margin-bottom: 160px;
+    position: relative;
+}
+.exp-title{
+    max-width: 470px;
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin: 24px 0;
+}
+.exp-des{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.exp-card-container{
+    margin:30px 0;
+}
+.exp-card-container .card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin: 20px 0;
+    padding: 30px;
+}
+.exp-card-container .card .card-title{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+.exp-card-container .card .card-des{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.exp-year{
+    max-width: 342px;
+    position: absolute;
+    left: 45%;
+    bottom: -30px;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 45px 42px;
+}
+.exp-year>h3{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.exp-year>h3>p{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+
+
+
+
 /* facts  */
 
 .facts-title{
@@ -264,6 +338,18 @@ main{
     .sponsors-img-container{
         flex-direction: column;
     }
+
+    .exp{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .exp-img img{
+        width: 100%;
+    }
+    .exp-year{
+        position: static;
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px){
@@ -320,6 +406,17 @@ main{
         flex-wrap: wrap;
         padding: 30px;
         justify-content: center;
+    }
+    .exp{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .exp-img img{
+        width: 100%;
+    }
+    .exp-year{
+        position: static;
+        padding: 20px;
     }
 }
 
